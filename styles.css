@@ -1,0 +1,49 @@
+#game-container {
+    width: 400px;
+    height: 500px;
+    border: 2px solid black;
+    position: relative;
+    background: url('back_image.png') no-repeat center center; /* Add the background image */
+    background-size: cover; /* Ensure the image covers the entire container */
+    margin: 0 auto;
+}
+
+.basket {
+    width: 100px;
+    height: 30px;
+    background-color: peru; /* Light brown color for the basket */
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0;
+    border: 2px solid black; /* Black border around the basket */
+
+    /* Black diamond check pattern */
+    background-image: 
+        linear-gradient(45deg, black 25%, transparent 25%), 
+        linear-gradient(-45deg, black 25%, transparent 25%),
+        linear-gradient(45deg, transparent 75%, black 75%),
+        linear-gradient(-45deg, transparent 75%, black 75%);
+    
+    background-size: 20px 20px; /* Adjust size of diamond pattern */
+    background-position: 0 0, 0 10px, 10px -10px, -10px 0px; /* Diamond positioning */
+}
+
+/* Golden Egg with black border */
+.golden-egg {
+    width: 40px;
+    height: 50px;
+    background-color: gold; /* Golden egg color */
+    border-radius: 50%; /* To make it oval like an egg */
+    position: absolute;
+    top: 0;
+    border: 2px solid black; /* Black border around the egg */
+}
+
+#score {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: peru; /* Optional to make the score stand out against the background */
+}
